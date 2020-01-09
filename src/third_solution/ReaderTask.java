@@ -17,7 +17,7 @@ public class ReaderTask implements Runnable{
 			bankAccount.readers++;
 			
 			if(bankAccount.readers == 1)
-				bankAccount.balanceSemaphore.acquire();			// lejon shum readera njekohsisht
+				bankAccount.balanceSemaphore.acquire();		
 			
 			bankAccount.queueSemaphore.release();
 			
